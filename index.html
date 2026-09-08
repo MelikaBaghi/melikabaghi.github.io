@@ -86,6 +86,42 @@
             channel choice — modelled explicitly. Letting wards share idle beds cut the mean inpatient
             admission queue <strong>43%, from 25.9 to 14.8 days</strong> (30 randomized-seed replications,
             <em>p</em> &lt; 0.001) against an otherwise identical discrete-event model.</p>
+          <p class="figure">
+<svg viewBox="0 0 640 150" role="img" aria-label="Patients queue for admission; wards lend each other idle beds, cutting the mean queue from 25.9 to 14.8 days">
+<defs><marker id="ah1" markerWidth="7" markerHeight="7" refX="6" refY="3" orient="auto">
+<path d="M0,0 L6,3 L0,6 z" fill="var(--muted)"/></marker>
+<marker id="ah1g" markerWidth="7" markerHeight="7" refX="6" refY="3" orient="auto">
+<path d="M0,0 L6,3 L0,6 z" fill="var(--gold)"/></marker></defs>
+<g font-size="11" fill="var(--muted)" font-family="inherit">
+<line x1="8" y1="75" x2="52" y2="75" stroke="var(--muted)" stroke-width="1.4" marker-end="url(#ah1)"/>
+<text x="8" y="66">arrivals</text>
+<g fill="var(--rule)" stroke="var(--muted)" stroke-width="1">
+<rect x="62" y="66" width="9" height="18" rx="1.5"/><rect x="74" y="66" width="9" height="18" rx="1.5"/>
+<rect x="86" y="66" width="9" height="18" rx="1.5"/><rect x="98" y="66" width="9" height="18" rx="1.5"/></g>
+<text x="62" y="99">queue</text>
+<rect x="140" y="12" width="180" height="52" rx="4" fill="none" stroke="var(--rule)" stroke-width="1.2"/>
+<text x="150" y="27" fill="var(--fg)" font-weight="600">Ward A</text>
+<g stroke="var(--muted)" stroke-width="0.9">
+<rect x="150" y="36" width="24" height="16" rx="2" fill="var(--muted)"/><rect x="178" y="36" width="24" height="16" rx="2" fill="var(--muted)"/>
+<rect x="206" y="36" width="24" height="16" rx="2" fill="var(--muted)"/><rect x="234" y="36" width="24" height="16" rx="2" fill="var(--muted)"/>
+<rect x="262" y="36" width="24" height="16" rx="2" fill="var(--muted)"/><rect x="290" y="36" width="24" height="16" rx="2" fill="var(--muted)"/></g>
+<rect x="140" y="86" width="180" height="52" rx="4" fill="none" stroke="var(--rule)" stroke-width="1.2"/>
+<text x="150" y="101" fill="var(--fg)" font-weight="600">Ward B</text>
+<g stroke="var(--muted)" stroke-width="0.9">
+<rect x="150" y="110" width="24" height="16" rx="2" fill="var(--muted)"/><rect x="178" y="110" width="24" height="16" rx="2" fill="var(--muted)"/>
+<rect x="206" y="110" width="24" height="16" rx="2" fill="var(--muted)"/>
+<rect x="234" y="110" width="24" height="16" rx="2" fill="none"/><rect x="262" y="110" width="24" height="16" rx="2" fill="none"/>
+<rect x="290" y="110" width="24" height="16" rx="2" fill="none"/></g>
+<path d="M330 112 C 346 112, 346 44, 332 44" fill="none" stroke="var(--gold)" stroke-width="1.6"
+      stroke-dasharray="4 3" marker-end="url(#ah1g)"/>
+<text x="354" y="80" fill="var(--gold)" font-size="10">idle beds</text>
+<text x="354" y="92" fill="var(--gold)" font-size="10">shared</text>
+<line x1="424" y1="20" x2="424" y2="130" stroke="var(--rule)" stroke-width="1"/>
+<text x="444" y="52" font-size="10">mean admission queue</text>
+<text x="444" y="80" fill="var(--fg)" font-size="19" font-weight="650">25.9 → 14.8</text>
+<text x="444" y="98" font-size="10">days · 43% shorter</text>
+</g></svg>
+          </p>
           <p class="tags"><span>Healthcare operations</span><span>Simulation</span><span>AnyLogic</span><span>Design of experiments</span></p>
           <p class="plinks">
             <a href="https://arxiv.org/abs/2605.19139">Paper</a>
@@ -100,6 +136,42 @@
             notes but no genomics. This work certifies a prediction when the evidence already in hand
             determines the decision, and otherwise abstains and says which modality to acquire next,
             with distribution-free coverage guarantees.</p>
+          <p class="figure">
+<svg viewBox="0 0 640 150" role="img" aria-label="From the observed modalities, either certify the prediction and act, or abstain and acquire the next modality">
+<defs><marker id="ah2" markerWidth="7" markerHeight="7" refX="6" refY="3" orient="auto">
+<path d="M0,0 L6,3 L0,6 z" fill="var(--muted)"/></marker>
+<marker id="ah2g" markerWidth="7" markerHeight="7" refX="6" refY="3" orient="auto">
+<path d="M0,0 L6,3 L0,6 z" fill="var(--gold)"/></marker></defs>
+<g font-size="11" fill="var(--muted)" font-family="inherit">
+<text x="8" y="24" font-size="10">observed</text>
+<g stroke="var(--muted)" stroke-width="1">
+<rect x="8" y="32" width="86" height="20" rx="3" fill="var(--muted)" fill-opacity="0.85"/>
+<rect x="8" y="56" width="86" height="20" rx="3" fill="var(--muted)" fill-opacity="0.85"/>
+<rect x="8" y="80" width="86" height="20" rx="3" fill="none" stroke-dasharray="3 3"/>
+<rect x="8" y="104" width="86" height="20" rx="3" fill="none" stroke-dasharray="3 3"/></g>
+<text x="16" y="46" fill="var(--bg)" font-size="10">imaging</text>
+<text x="16" y="70" fill="var(--bg)" font-size="10">labs</text>
+<text x="16" y="94" font-size="10">notes</text>
+<text x="16" y="118" font-size="10">genomics</text>
+<line x1="102" y1="72" x2="140" y2="72" stroke="var(--muted)" stroke-width="1.4" marker-end="url(#ah2)"/>
+<path d="M196 44 L246 72 L196 100 L146 72 Z" fill="none" stroke="var(--accent)" stroke-width="1.4"/>
+<text x="196" y="68" text-anchor="middle" fill="var(--accent)" font-size="9.5">enough</text>
+<text x="196" y="80" text-anchor="middle" fill="var(--accent)" font-size="9.5">evidence?</text>
+<line x1="248" y1="60" x2="300" y2="40" stroke="var(--muted)" stroke-width="1.4" marker-end="url(#ah2)"/>
+<text x="256" y="36" font-size="9.5">yes</text>
+<rect x="306" y="24" width="120" height="32" rx="4" fill="none" stroke="var(--fg)" stroke-width="1.3"/>
+<text x="366" y="44" text-anchor="middle" fill="var(--fg)" font-size="11" font-weight="600">certify &amp; act</text>
+<line x1="248" y1="86" x2="300" y2="108" stroke="var(--gold)" stroke-width="1.4" marker-end="url(#ah2g)"/>
+<text x="256" y="112" fill="var(--gold)" font-size="9.5">no</text>
+<rect x="306" y="92" width="150" height="32" rx="4" fill="none" stroke="var(--gold)" stroke-width="1.3"/>
+<text x="381" y="112" text-anchor="middle" fill="var(--gold)" font-size="11">abstain, acquire next</text>
+<path d="M306 108 C 270 140, 60 146, 51 128" fill="none" stroke="var(--gold)" stroke-width="1.2"
+      stroke-dasharray="4 3" marker-end="url(#ah2g)"/>
+<line x1="476" y1="20" x2="476" y2="130" stroke="var(--rule)" stroke-width="1"/>
+<text x="494" y="62" font-size="10">coverage holds for</text>
+<text x="494" y="78" fill="var(--fg)" font-size="11" font-weight="600">every stopping pattern</text>
+</g></svg>
+          </p>
           <p class="tags"><span>Conformal prediction</span><span>Multimodal learning</span><span>Missing data</span><span>Clinical decision support</span></p>
           <p class="plinks">
             <a href="https://arxiv.org/abs/2608.15520">Paper</a>
@@ -113,6 +185,30 @@
             point on a manifold, valid only inside a bounded region. cXGBoost enforces that bound inside
             every leaf of the boosting ensemble rather than correcting afterwards, so predictions are valid
             by construction and no general-purpose optimiser is called at any split.</p>
+          <p class="figure">
+<svg viewBox="0 0 640 150" role="img" aria-label="An unconstrained leaf value falls outside the valid region; cXGBoost projects it into the intersection of the balls during fitting">
+<defs><marker id="ah3" markerWidth="7" markerHeight="7" refX="6" refY="3" orient="auto">
+<path d="M0,0 L6,3 L0,6 z" fill="var(--gold)"/></marker></defs>
+<g font-size="11" fill="var(--muted)" font-family="inherit">
+<path d="M154 33.4 A 48 48 0 0 1 154 116.6 A 48 48 0 0 1 154 33.4 Z"
+      fill="var(--accent)" fill-opacity="0.12" stroke="none"/>
+<circle cx="130" cy="75" r="48" fill="none" stroke="var(--accent)" stroke-width="1.4"/>
+<circle cx="178" cy="75" r="48" fill="none" stroke="var(--accent)" stroke-width="1.4" stroke-dasharray="4 3"/>
+<text x="154" y="93" text-anchor="middle" fill="var(--accent)" font-size="9.5">valid</text>
+<circle cx="330" cy="36" r="4" fill="var(--fg)"/>
+<text x="342" y="32" fill="var(--fg)" font-size="10">unconstrained leaf value</text>
+<text x="342" y="45" font-size="9.5">‖y‖ &gt; π/2 — not unique</text>
+<line x1="325" y1="41" x2="164" y2="58" stroke="var(--gold)" stroke-width="1.6"
+      stroke-dasharray="4 3" marker-end="url(#ah3)"/>
+<circle cx="154" cy="60" r="4.5" fill="var(--gold)"/>
+<text x="250" y="104" fill="var(--gold)" font-size="10">projected into both balls</text>
+<text x="250" y="117" font-size="9.5">closed form, or Dykstra</text>
+<line x1="470" y1="20" x2="470" y2="130" stroke="var(--rule)" stroke-width="1"/>
+<text x="488" y="56" font-size="10">enforced at</text>
+<text x="488" y="76" fill="var(--fg)" font-size="12" font-weight="600">every split, during fit</text>
+<text x="488" y="94" font-size="10">not corrected afterwards</text>
+</g></svg>
+          </p>
           <p class="tags"><span>Gradient boosting</span><span>Manifold learning</span><span>Surrogate modeling</span></p>
           <p class="plinks">
             <a href="https://arxiv.org/abs/2605.04130">Paper</a>
@@ -127,6 +223,44 @@
             produced it, and pays for that pooling with an <em>effective dimension</em> that reads the overlap
             between actions rather than counting them — so the cost tracks how much the actions actually
             share.</p>
+          <p class="figure">
+<svg viewBox="0 0 640 150" role="img" aria-label="Actions lead to states; a loss seen after a delay is credited back only to the actions that could have produced that state">
+<defs><marker id="ah4" markerWidth="7" markerHeight="7" refX="6" refY="3" orient="auto">
+<path d="M0,0 L6,3 L0,6 z" fill="var(--muted)"/></marker>
+<marker id="ah4g" markerWidth="7" markerHeight="7" refX="6" refY="3" orient="auto">
+<path d="M0,0 L6,3 L0,6 z" fill="var(--gold)"/></marker></defs>
+<g font-size="11" fill="var(--muted)" font-family="inherit">
+<text x="12" y="20" font-size="10">actions</text>
+<circle cx="32" cy="42" r="12" fill="none" stroke="var(--muted)" stroke-width="1.2"/>
+<circle cx="32" cy="78" r="12" fill="none" stroke="var(--muted)" stroke-width="1.2"/>
+<circle cx="32" cy="114" r="12" fill="none" stroke="var(--muted)" stroke-width="1.2"/>
+<text x="32" y="46" text-anchor="middle" font-size="10">a₁</text>
+<text x="32" y="82" text-anchor="middle" font-size="10">a₂</text>
+<text x="32" y="118" text-anchor="middle" font-size="10">a₃</text>
+<text x="134" y="20" font-size="10">states</text>
+<circle cx="152" cy="52" r="13" fill="none" stroke="var(--accent)" stroke-width="1.3"/>
+<circle cx="152" cy="112" r="13" fill="none" stroke="var(--accent)" stroke-width="1.3"/>
+<text x="152" y="56" text-anchor="middle" fill="var(--accent)" font-size="10">s₁</text>
+<text x="152" y="116" text-anchor="middle" fill="var(--accent)" font-size="10">s₂</text>
+<g stroke="var(--muted)" stroke-width="1.1" fill="none" marker-end="url(#ah4)">
+<line x1="45" y1="43" x2="134" y2="50"/><line x1="45" y1="74" x2="134" y2="56"/>
+<line x1="45" y1="84" x2="134" y2="106"/><line x1="45" y1="114" x2="134" y2="111"/></g>
+<line x1="170" y1="52" x2="252" y2="52" stroke="var(--muted)" stroke-width="1.2"
+      stroke-dasharray="3 3" marker-end="url(#ah4)"/>
+<text x="180" y="44" font-size="9.5">delay d</text>
+<rect x="256" y="37" width="92" height="30" rx="4" fill="none" stroke="var(--fg)" stroke-width="1.3"/>
+<text x="302" y="56" text-anchor="middle" fill="var(--fg)" font-size="11">loss at s₁</text>
+<path d="M258 67 C 210 96, 110 70, 45 47" fill="none" stroke="var(--gold)" stroke-width="1.5"
+      marker-end="url(#ah4g)"/>
+<path d="M258 67 C 205 116, 108 100, 45 82" fill="none" stroke="var(--gold)" stroke-width="1.5"
+      marker-end="url(#ah4g)"/>
+<text x="86" y="142" fill="var(--gold)" font-size="9.5">credited to a₁ and a₂ — the actions that reach s₁</text>
+<line x1="386" y1="20" x2="386" y2="130" stroke="var(--rule)" stroke-width="1"/>
+<text x="404" y="56" font-size="10">price of pooling</text>
+<text x="404" y="76" fill="var(--fg)" font-size="12" font-weight="600">effective dimension vₜ</text>
+<text x="404" y="94" font-size="10">row overlap of P, not |A| or |S|</text>
+</g></svg>
+          </p>
           <p class="tags"><span>Sequential decision making</span><span>Bandits</span><span>Online learning</span><span>Delayed feedback</span></p>
           <p class="plinks">
             <a href="https://arxiv.org/abs/2609.01761">Paper</a>
