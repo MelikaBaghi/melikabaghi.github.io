@@ -306,6 +306,41 @@ h2 {
   text-decoration: none;
 }
 
+/* ---------- projects ---------- */
+
+.projects {
+  list-style: none;
+  margin: 0 0 4px;
+  padding: 0;
+}
+
+.projects > li {
+  position: relative;
+  margin-bottom: 11px;
+  padding-left: 15px;
+  font-size: 0.93rem;
+  line-height: 1.6;
+}
+
+.projects > li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.66em;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--gold);
+}
+
+.projects b { font-weight: 650; }
+
+.projects .meta {
+  color: var(--faint);
+  font-size: 0.83rem;
+  white-space: nowrap;
+}
+
 /* ---------- skills ---------- */
 
 .skills {
