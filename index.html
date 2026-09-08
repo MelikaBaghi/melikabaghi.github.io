@@ -168,56 +168,6 @@
             <a href="https://doi.org/10.5281/zenodo.22646799">DOI</a>
           </p>
         </li>
-
-        <li class="card">
-          <p class="ctitle">Deciding when partial clinical evidence is enough</p>
-          <p class="cdesc">Clinical models often have to act on incomplete inputs — imaging but no labs,
-            notes but no genomics. This work certifies a prediction when the evidence already in hand
-            determines the decision, and otherwise abstains and says which modality to acquire next,
-            with distribution-free coverage guarantees.</p>
-          <p class="figure">
-<svg viewBox="0 0 640 150" role="img" aria-label="From the observed modalities, either certify the prediction and act, or abstain and acquire the next modality">
-<defs><marker id="ah2" markerWidth="11" markerHeight="9" refX="9.8" refY="4.5" orient="auto" markerUnits="userSpaceOnUse">
-<path d="M0,0.6 L10.2,4.5 L0,8.4 Z" fill="var(--muted)"/></marker>
-<marker id="ah2g" markerWidth="11" markerHeight="9" refX="9.8" refY="4.5" orient="auto" markerUnits="userSpaceOnUse">
-<path d="M0,0.6 L10.2,4.5 L0,8.4 Z" fill="var(--gold)"/></marker></defs>
-<g font-size="11" fill="var(--muted)" font-family="inherit">
-<text x="8" y="24" font-size="10">observed</text>
-<g stroke="var(--muted)" stroke-width="1">
-<rect x="8" y="32" width="86" height="20" rx="3" fill="var(--muted)" fill-opacity="0.85"/>
-<rect x="8" y="56" width="86" height="20" rx="3" fill="var(--muted)" fill-opacity="0.85"/>
-<rect x="8" y="80" width="86" height="20" rx="3" fill="none" stroke-dasharray="3 3"/>
-<rect x="8" y="104" width="86" height="20" rx="3" fill="none" stroke-dasharray="3 3"/></g>
-<text x="16" y="46" fill="var(--bg)" font-size="10">imaging</text>
-<text x="16" y="70" fill="var(--bg)" font-size="10">labs</text>
-<text x="16" y="94" font-size="10">notes</text>
-<text x="16" y="118" font-size="10">genomics</text>
-<line x1="102" y1="72" x2="140" y2="72" stroke="var(--muted)" stroke-width="1.4" marker-end="url(#ah2)"/>
-<path d="M196 44 L246 72 L196 100 L146 72 Z" fill="none" stroke="var(--accent)" stroke-width="1.4"/>
-<text x="196" y="68" text-anchor="middle" fill="var(--accent)" font-size="9.5">enough</text>
-<text x="196" y="80" text-anchor="middle" fill="var(--accent)" font-size="9.5">evidence?</text>
-<line x1="248" y1="60" x2="300" y2="40" stroke="var(--muted)" stroke-width="1.4" marker-end="url(#ah2)"/>
-<text x="256" y="36" font-size="9.5">yes</text>
-<rect x="306" y="24" width="120" height="32" rx="4" fill="none" stroke="var(--fg)" stroke-width="1.3"/>
-<text x="366" y="44" text-anchor="middle" fill="var(--fg)" font-size="11" font-weight="600">certify &amp; act</text>
-<line x1="248" y1="86" x2="300" y2="108" stroke="var(--gold)" stroke-width="1.4" marker-end="url(#ah2g)"/>
-<text x="256" y="112" fill="var(--gold)" font-size="9.5">no</text>
-<rect x="306" y="92" width="150" height="32" rx="4" fill="none" stroke="var(--gold)" stroke-width="1.3"/>
-<text x="381" y="112" text-anchor="middle" fill="var(--gold)" font-size="11">abstain, acquire next</text>
-<path d="M306 112 C 230 150, 80 150, 51 130" fill="none" stroke="var(--gold)" stroke-width="1.4"
-      stroke-dasharray="4 3" marker-end="url(#ah2g)"/>
-<line x1="476" y1="20" x2="476" y2="130" stroke="var(--rule)" stroke-width="1"/>
-<text x="494" y="62" font-size="10">coverage holds for</text>
-<text x="494" y="78" fill="var(--fg)" font-size="11" font-weight="600">every stopping pattern</text>
-</g></svg>
-          </p>
-          <p class="tags"><span>Conformal prediction</span><span>Multimodal learning</span><span>Missing data</span><span>Clinical decision support</span></p>
-          <p class="plinks">
-            <a href="https://arxiv.org/abs/2608.15520">Paper</a>
-            <a href="https://github.com/MelikaBaghi/RouteCert">Code</a>
-          </p>
-        </li>
-
         <li class="card">
           <p class="ctitle">Constrained boosting for reduced-order models</p>
           <p class="cdesc">Predicting a simulation's reduced basis at unseen parameters means regressing a
@@ -254,7 +204,6 @@
             <a href="https://github.com/melikabaghi/cXGBoost">Code</a>
           </p>
         </li>
-
         <li class="card">
           <p class="ctitle">Learning from delayed feedback</p>
           <p class="cdesc">When an action's outcome only arrives after a delay, most algorithms wait or
@@ -305,6 +254,101 @@
             <a href="https://arxiv.org/abs/2609.01761">Paper</a>
             <a href="https://github.com/melikabaghi/State-exp3">Code</a>
           </p>
+        </li>
+        <li class="card">
+          <p class="ctitle">Deciding when partial clinical evidence is enough</p>
+          <p class="cdesc">Clinical models often have to act on incomplete inputs — imaging but no labs,
+            notes but no genomics. This work certifies a prediction when the evidence already in hand
+            determines the decision, and otherwise abstains and says which modality to acquire next,
+            with distribution-free coverage guarantees.</p>
+          <p class="figure">
+<svg viewBox="0 0 640 150" role="img" aria-label="From the observed modalities, either certify the prediction and act, or abstain and acquire the next modality">
+<defs><marker id="ah2" markerWidth="11" markerHeight="9" refX="9.8" refY="4.5" orient="auto" markerUnits="userSpaceOnUse">
+<path d="M0,0.6 L10.2,4.5 L0,8.4 Z" fill="var(--muted)"/></marker>
+<marker id="ah2g" markerWidth="11" markerHeight="9" refX="9.8" refY="4.5" orient="auto" markerUnits="userSpaceOnUse">
+<path d="M0,0.6 L10.2,4.5 L0,8.4 Z" fill="var(--gold)"/></marker></defs>
+<g font-size="11" fill="var(--muted)" font-family="inherit">
+<text x="8" y="24" font-size="10">observed</text>
+<g stroke="var(--muted)" stroke-width="1">
+<rect x="8" y="32" width="86" height="20" rx="3" fill="var(--muted)" fill-opacity="0.85"/>
+<rect x="8" y="56" width="86" height="20" rx="3" fill="var(--muted)" fill-opacity="0.85"/>
+<rect x="8" y="80" width="86" height="20" rx="3" fill="none" stroke-dasharray="3 3"/>
+<rect x="8" y="104" width="86" height="20" rx="3" fill="none" stroke-dasharray="3 3"/></g>
+<text x="16" y="46" fill="var(--bg)" font-size="10">imaging</text>
+<text x="16" y="70" fill="var(--bg)" font-size="10">labs</text>
+<text x="16" y="94" font-size="10">notes</text>
+<text x="16" y="118" font-size="10">genomics</text>
+<line x1="102" y1="72" x2="140" y2="72" stroke="var(--muted)" stroke-width="1.4" marker-end="url(#ah2)"/>
+<path d="M196 44 L246 72 L196 100 L146 72 Z" fill="none" stroke="var(--accent)" stroke-width="1.4"/>
+<text x="196" y="68" text-anchor="middle" fill="var(--accent)" font-size="9.5">enough</text>
+<text x="196" y="80" text-anchor="middle" fill="var(--accent)" font-size="9.5">evidence?</text>
+<line x1="248" y1="60" x2="300" y2="40" stroke="var(--muted)" stroke-width="1.4" marker-end="url(#ah2)"/>
+<text x="256" y="36" font-size="9.5">yes</text>
+<rect x="306" y="24" width="120" height="32" rx="4" fill="none" stroke="var(--fg)" stroke-width="1.3"/>
+<text x="366" y="44" text-anchor="middle" fill="var(--fg)" font-size="11" font-weight="600">certify &amp; act</text>
+<line x1="248" y1="86" x2="300" y2="108" stroke="var(--gold)" stroke-width="1.4" marker-end="url(#ah2g)"/>
+<text x="256" y="112" fill="var(--gold)" font-size="9.5">no</text>
+<rect x="306" y="92" width="150" height="32" rx="4" fill="none" stroke="var(--gold)" stroke-width="1.3"/>
+<text x="381" y="112" text-anchor="middle" fill="var(--gold)" font-size="11">abstain, acquire next</text>
+<path d="M306 112 C 230 150, 80 150, 51 130" fill="none" stroke="var(--gold)" stroke-width="1.4"
+      stroke-dasharray="4 3" marker-end="url(#ah2g)"/>
+<line x1="476" y1="20" x2="476" y2="130" stroke="var(--rule)" stroke-width="1"/>
+<text x="494" y="62" font-size="10">coverage holds for</text>
+<text x="494" y="78" fill="var(--fg)" font-size="11" font-weight="600">every stopping pattern</text>
+</g></svg>
+          </p>
+          <p class="tags"><span>Conformal prediction</span><span>Multimodal learning</span><span>Missing data</span><span>Clinical decision support</span></p>
+          <p class="plinks">
+            <a href="https://arxiv.org/abs/2608.15520">Paper</a>
+            <a href="https://github.com/MelikaBaghi/RouteCert">Code</a>
+          </p>
+        </li>
+        <li class="card">
+          <p class="ctitle">Surrogates that keep the data's shape</p>
+          <p class="cdesc">Simulation output is naturally multiway — space by space by time. The usual move is
+            to flatten it into one long vector, which throws that structure away. This keeps it: every mode
+            gets its own low-dimensional subspace, each interpolated on its own manifold, with the cores
+            aligned before a single low-rank surrogate is fitted. Across four PDE benchmarks that is
+            <strong>35.6× to 564× less interpolation work</strong> and 4× to 108× faster than flattened
+            baselines, matching their accuracy to within 0.35 percentage points.</p>
+          <p class="figure">
+<svg viewBox="0 0 640 150" role="img" aria-label="Simulation output is multiway; instead of flattening it, each mode keeps its own subspace, interpolated separately, with cores aligned before fitting">
+<defs><marker id="ah5" markerWidth="11" markerHeight="9" refX="9.8" refY="4.5" orient="auto" markerUnits="userSpaceOnUse">
+<path d="M0,0.6 L10.2,4.5 L0,8.4 Z" fill="var(--muted)"/></marker>
+<marker id="ah5g" markerWidth="11" markerHeight="9" refX="9.8" refY="4.5" orient="auto" markerUnits="userSpaceOnUse">
+<path d="M0,0.6 L10.2,4.5 L0,8.4 Z" fill="var(--gold)"/></marker></defs>
+<g font-size="11" fill="var(--muted)" font-family="inherit">
+<text x="10" y="22" font-size="10">simulation field</text>
+<path d="M14 44 L54 32 L84 44 L44 58 Z" fill="var(--muted)" fill-opacity="0.30" stroke="var(--muted)" stroke-width="1.1"/>
+<path d="M14 44 L14 88 L44 102 L44 58 Z" fill="var(--muted)" fill-opacity="0.16" stroke="var(--muted)" stroke-width="1.1"/>
+<path d="M44 58 L84 44 L84 88 L44 102 Z" fill="var(--muted)" fill-opacity="0.22" stroke="var(--muted)" stroke-width="1.1"/>
+<text x="16" y="120" font-size="9.5">space × space × time</text>
+<line x1="96" y1="68" x2="132" y2="68" stroke="var(--muted)" stroke-width="1.3" marker-end="url(#ah5)"/>
+<text x="150" y="26" font-size="9.5">one subspace per mode</text>
+<g stroke="var(--accent)" stroke-width="1.2" fill="var(--accent)" fill-opacity="0.14">
+<rect x="150" y="36" width="62" height="15" rx="2"/>
+<rect x="150" y="57" width="62" height="15" rx="2"/>
+<rect x="150" y="78" width="62" height="15" rx="2"/></g>
+<text x="219" y="47" font-size="9.5" fill="var(--accent)">U₁</text>
+<text x="219" y="68" font-size="9.5" fill="var(--accent)">U₂</text>
+<text x="219" y="89" font-size="9.5" fill="var(--accent)">U₃</text>
+<path d="M244 52 L266 45 L282 52 L260 60 Z" fill="var(--gold)" fill-opacity="0.30" stroke="var(--gold)" stroke-width="1.1"/>
+<path d="M244 52 L244 74 L260 82 L260 60 Z" fill="var(--gold)" fill-opacity="0.16" stroke="var(--gold)" stroke-width="1.1"/>
+<path d="M260 60 L282 52 L282 74 L260 82 Z" fill="var(--gold)" fill-opacity="0.22" stroke="var(--gold)" stroke-width="1.1"/>
+<text x="240" y="98" font-size="9.5" fill="var(--gold)">core</text>
+<line x1="296" y1="68" x2="332" y2="68" stroke="var(--muted)" stroke-width="1.3" marker-end="url(#ah5)"/>
+<text x="342" y="46" font-size="10">each mode interpolated</text>
+<text x="342" y="60" font-size="10">on its own manifold</text>
+<text x="342" y="82" fill="var(--gold)" font-size="10">cores aligned, then</text>
+<text x="342" y="96" fill="var(--gold)" font-size="10">one low-rank surrogate</text>
+<line x1="470" y1="20" x2="470" y2="130" stroke="var(--rule)" stroke-width="1"/>
+<text x="488" y="48" font-size="10">vs flattening the field</text>
+<text x="488" y="70" fill="var(--fg)" font-size="13" font-weight="650">up to 564× less work</text>
+<text x="488" y="90" font-size="10">4×–108× faster, same accuracy</text>
+</g></svg>
+          </p>
+          <p class="tags"><span>Tensor decompositions</span><span>Surrogate modeling</span><span>Riemannian geometry</span><span>Scientific ML</span></p>
+          <p class="plinks"><span class="status">Manuscript under review</span></p>
         </li>
 
       </ul>
