@@ -33,7 +33,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--fg);
-  font: 16px/1.72 -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font: 16px/1.62 -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-feature-settings: "kern" 1;
   -webkit-font-smoothing: antialiased;
 }
@@ -81,37 +81,37 @@ a:hover { text-decoration: underline; text-underline-offset: 2px; }
 
 .rail h1 {
   margin: 0 0 5px;
-  font-size: 1.42rem;
+  font-size: 1.75rem;
   font-weight: 650;
-  letter-spacing: -0.2px;
+  letter-spacing: -0.4px;
   text-align: center;
 }
 
 .role {
   margin: 0 0 16px;
   text-align: center;
-  font-size: 0.815rem;
+  font-size: 0.95rem;
   font-weight: 600;
-  line-height: 1.45;
+  line-height: 1.4;
   color: var(--accent);
 }
 
 .tagline {
   margin: -10px 0 16px;
   text-align: center;
-  font-size: 0.76rem;
+  font-size: 0.875rem;
   line-height: 1.5;
-  color: var(--faint);
+  color: var(--muted);
 }
 
 .nav {
   display: flex;
   flex-direction: column;
-  gap: 7px;
+  gap: 8px;
   margin-top: 20px;
   padding-top: 18px;
   border-top: 1px solid var(--rule);
-  font-size: 0.79rem;
+  font-size: 0.855rem;
 }
 
 .nav a {
@@ -134,7 +134,7 @@ a:hover { text-decoration: underline; text-underline-offset: 2px; }
   margin: 0;
   padding: 20px 0 0;
   border-top: 1px solid var(--rule);
-  font-size: 0.83rem;
+  font-size: 0.875rem;
 }
 
 .links li {
@@ -182,11 +182,11 @@ h2 {
   margin: 0 0 20px;
   padding-bottom: 9px;
   border-bottom: 1px solid var(--rule);
-  font-size: 0.795rem;
+  font-size: 0.95rem;
   font-weight: 650;
-  letter-spacing: 0.11em;
+  letter-spacing: 0.07em;
   text-transform: uppercase;
-  color: var(--muted);
+  color: var(--fg);
 }
 
 .lede {
@@ -340,6 +340,26 @@ h2 {
   font-size: 0.83rem;
   white-space: nowrap;
 }
+
+.more { margin-top: 18px; }
+
+.more > summary {
+  cursor: pointer;
+  display: inline-block;
+  padding: 4px 12px;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--muted);
+  list-style: none;
+}
+
+.more > summary::-webkit-details-marker { display: none; }
+.more > summary::after { content: " +"; }
+.more[open] > summary::after { content: " –"; }
+.more > summary:hover { border-color: var(--accent); color: var(--accent); }
+.more[open] > summary { margin-bottom: 16px; }
 
 /* ---------- skills ---------- */
 
