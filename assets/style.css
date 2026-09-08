@@ -468,6 +468,11 @@ footer {
   color: var(--faint);
 }
 
+.fnote  { margin: 0 0 6px; }
+.flinks { margin: 0; }
+.flinks a { color: var(--muted); }
+.flinks a:hover { color: var(--accent); }
+
 /* ---------- responsive ---------- */
 
 @media (max-width: 860px) {
