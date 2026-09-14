@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projects · Melika Baghi</title>
+<meta name="description" content="Research threads and projects by Melika Baghi: hospital simulation, constrained boosting for reduced-order models, delayed bandits, adaptive modality acquisition, and tensor surrogates.">
+<meta name="author" content="Melika Baghi">
+<link rel="canonical" href="https://melikabaghi.github.io/projects.html">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Projects · Melika Baghi">
+<meta property="og:description" content="Research threads and projects by Melika Baghi: hospital simulation, constrained boosting for reduced-order models, delayed bandits, adaptive modality acquisition, and tensor surrogates.">
+<meta property="og:image" content="https://melikabaghi.github.io/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:url" content="https://melikabaghi.github.io/projects.html">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='26' font-family='Georgia,serif'>M</text></svg>">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html">Melika Baghi</a>
+    <nav class="topnav" aria-label="Site">
+      <a href="index.html">Home</a>
+      <a href="projects.html" aria-current="page">Projects</a>
+      <a href="publications.html">Publications</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="awards.html">Awards & Service</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <h1 class="pagetitle">Projects</h1>
+
+  <p class="kicker">Research threads</p>
+
+  <article class="thread">
+    <h3>Hospital capacity for medical tourists and local patients</h3>
+    <p class="tmeta">Amirkabir University of Technology · paper under review at <em>Health Care Management Science</em></p>
+    <figure>
+      <div class="fig">
+<svg viewBox="0 0 640 150" role="img" aria-label="Patients queue for admission; wards lend each other idle beds, cutting the mean queue from 25.9 to 14.8 days">
+<defs><marker id="ah1" markerWidth="11" markerHeight="9" refX="9.8" refY="4.5" orient="auto" markerUnits="userSpaceOnUse">
+<path d="M0,0.6 L10.2,4.5 L0,8.4 Z" fill="var(--muted)"/></marker>
+<marker id="ah1g" markerWidth="11" markerHeight="9" refX="9.8" refY="4.5" orient="auto" markerUnits="userSpaceOnUse">
+<path d="M0,0.6 L10.2,4.5 L0,8.4 Z" fill="var(--gold)"/></marker></defs>
+<g font-size="11" fill="var(--muted)" font-family="inherit">
+<line x1="8" y1="75" x2="52" y2="75" stroke="var(--muted)" stroke-width="1.4" marker-end="url(#ah1)"/>
+<text x="8" y="66">arrivals</text>
+<g fill="var(--rule)" stroke="var(--muted)" stroke-width="1">
+<rect x="62" y="66" width="9" height="18" rx="1.5"/><rect x="74" y="66" width="9" height="18" rx="1.5"/>
+<rect x="86" y="66" width="9" height="18" rx="1.5"/><rect x="98" y="66" width="9" height="18" rx="1.5"/></g>
+<text x="62" y="99">queue</text>
+<rect x="140" y="12" width="180" height="52" rx="4" fill="none" stroke="var(--rule)" stroke-width="1.2"/>
+<text x="150" y="27" fill="var(--fg)" font-weight="600">Ward A</text>
+<g stroke="var(--muted)" stroke-width="0.9">
+<rect x="150" y="36" width="24" height="16" rx="2" fill="var(--muted)"/><rect x="178" y="36" width="24" height="16" rx="2" fill="var(--muted)"/>
+<rect x="206" y="36" width="24" height="16" rx="2" fill="var(--muted)"/><rect x="234" y="36" width="24" height="16" rx="2" fill="var(--muted)"/>
+<rect x="262" y="36" width="24" height="16" rx="2" fill="var(--muted)"/><rect x="290" y="36" width="24" height="16" rx="2" fill="var(--muted)"/></g>
+<rect x="140" y="86" width="180" height="52" rx="4" fill="none" stroke="var(--rule)" stroke-width="1.2"/>
+<text x="150" y="101" fill="var(--fg)" font-weight="600">Ward B</text>
+<g stroke="var(--muted)" stroke-width="0.9">
+<rect x="150" y="110" width="24" height="16" rx="2" fill="var(--muted)"/><rect x="178" y="110" width="24" height="16" rx="2" fill="var(--muted)"/>
+<rect x="206" y="110" width="24" height="16" rx="2" fill="var(--muted)"/>
+<rect x="234" y="110" width="24" height="16" rx="2" fill="none"/><rect x="262" y="110" width="24" height="16" rx="2" fill="none"/>
+<rect x="290" y="110" width="24" height="16" rx="2" fill="none"/></g>
+<path d="M321 114 C 356 110, 356 44, 325 40" fill="none" stroke="var(--gold)" stroke-width="1.7"
+      marker-end="url(#ah1g)"/>
+<text x="354" y="80" fill="var(--gold)" font-size="10">idle beds</text>
+<text x="354" y="92" fill="var(--gold)" font-size="10">shared</text>
+<line x1="424" y1="20" x2="424" y2="130" stroke="var(--rule)" stroke-width="1"/>
+<text x="444" y="52" font-size="10">mean admission queue</text>
+<text x="444" y="80" fill="var(--fg)" font-size="19" font-weight="650">25.9 → 14.8</text>
+<text x="444" y="98" font-size="10">days · 43% shorter</text>
+</g></svg>
+      </div>
+      <figcaption>Patients queue for admission; wards lend each other idle beds, cutting the mean queue from 25.9 to 14.8 days.</figcaption>
+    </figure>
+    <dl class="pa">
+      <dt>Problem</dt>
+      <dd>A multi-specialty international-patient department serves medical tourists alongside local patients, and how those patients behave (abandoning, switching doctors, choosing a channel) affects the queues.</dd>
+      <dt>Approach</dt>
+      <dd>A hybrid agent-based and discrete-event simulation in AnyLogic with patient behaviour modelled explicitly, compared against an otherwise identical discrete-event-only model. A compatible-section bed-sharing policy was tested across 30 randomized-seed replications, with a 256-run fractional factorial design screening 16 operational factors.</dd>
+      <dt>Result</dt>
+      <dd>Medical tourists' <strong>hospital-queue wait falls by 82%</strong> (13.7 to 2.4 days), and bed sharing cuts the <strong>inpatient admission queue by 43%</strong> (25.9 to 14.8 days, <em>p</em> &lt; 0.001).</dd>
+      <dt>Links</dt>
+      <dd><span class="plinks"><a href="https://arxiv.org/abs/2605.19139">Paper</a><a href="https://github.com/MelikaBaghi/IPD-medical-tourism-simulation">Code</a><a href="https://doi.org/10.5281/zenodo.22646799">DOI</a></span></dd>
+    </dl>
+    <p class="tags"><span>Healthcare operations</span><span>Simulation</span><span>AnyLogic</span><span>Design of experiments</span></p>
+  </article>
+
+  <article class="thread">
+    <h3>Constrained boosting for reduced-order models</h3>
+    <p class="tmeta">Georgia Institute of Technology</p>
+    <figure>
+      <div class="fig">
+<svg viewBox="0 0 640 150" role="img" aria-label="An unconstrained leaf value falls outside the valid region; cXGBoost projects it into the intersection of the balls during fitting">
+<defs><marker id="ah3" markerWidth="11" markerHeight="9" refX="9.8" refY="4.5" orient="auto" markerUnits="userSpaceOnUse">
+<path d="M0,0.6 L10.2,4.5 L0,8.4 Z" fill="var(--gold)"/></marker></defs>
+<g font-size="11" fill="var(--muted)" font-family="inherit">
+<path d="M154 33.4 A 48 48 0 0 1 154 116.6 A 48 48 0 0 1 154 33.4 Z"
+      fill="var(--accent)" fill-opacity="0.12" stroke="none"/>
+<circle cx="130" cy="75" r="48" fill="none" stroke="var(--accent)" stroke-width="1.4"/>
+<circle cx="178" cy="75" r="48" fill="none" stroke="var(--accent)" stroke-width="1.4" stroke-dasharray="4 3"/>
+<text x="154" y="93" text-anchor="middle" fill="var(--accent)" font-size="9.5">valid</text>
+<circle cx="330" cy="36" r="4" fill="var(--fg)"/>
+<text x="342" y="32" fill="var(--fg)" font-size="10">unconstrained leaf value</text>
+<text x="342" y="45" font-size="9.5">outside the valid region</text>
+<line x1="326" y1="37" x2="164" y2="58" stroke="var(--gold)" stroke-width="1.7"
+      stroke-dasharray="4 3" marker-end="url(#ah3)"/>
+<circle cx="154" cy="60" r="4.5" fill="var(--gold)"/>
+<text x="250" y="104" fill="var(--gold)" font-size="10">projected into both balls</text>
+<text x="250" y="117" font-size="9.5">so the prediction is always usable</text>
+<line x1="470" y1="20" x2="470" y2="130" stroke="var(--rule)" stroke-width="1"/>
+<text x="488" y="56" font-size="10">enforced at</text>
+<text x="488" y="76" fill="var(--fg)" font-size="12" font-weight="600">every split, during fit</text>
+<text x="488" y="94" font-size="10">not corrected afterwards</text>
+</g></svg>
+      </div>
+      <figcaption>An unconstrained leaf value falls outside the valid region; cXGBoost projects it into the intersection of the balls during fitting.</figcaption>
+    </figure>
+    <dl class="pa">
+      <dt>Problem</dt>
+      <dd>Predicting a simulation's reduced basis at unseen parameters means regressing a point on a manifold, valid only inside a bounded region.</dd>
+      <dt>Approach</dt>
+      <dd>cXGBoost enforces that bound inside every leaf of the boosting ensemble rather than correcting afterwards, so predictions are valid by construction and no general-purpose optimiser is called at any split.</dd>
+      <dt>Result</dt>
+      <dd>Cuts high-Reynolds reconstruction error <strong>5×</strong> against Grassmann interpolation baselines across four PDE problems (cylinder wake, wave propagation, Burgers equation, beam dynamics). Released as an installable open-source package.</dd>
+      <dt>Links</dt>
+      <dd><span class="plinks"><a href="https://arxiv.org/abs/2605.04130">Paper</a><a href="https://github.com/MelikaBaghi/cXGBoost">Code</a></span></dd>
+    </dl>
+    <p class="tags"><span>Gradient boosting</span><span>Manifold learning</span><span>Surrogate modeling</span></p>
+  </article>
+
+  <article class="thread">
+    <h3>Learning from delayed feedback</h3>
+    <p class="tmeta">Georgia Institute of Technology</p>
+    <figure>
+      <div class="fig">
+<svg viewBox="0 0 640 150" role="img" aria-label="Actions lead to states; a loss seen after a delay is credited back only to the actions that could have produced that state">
+<defs><marker id="ah4" markerWidth="11" markerHeight="9" refX="9.8" refY="4.5" orient="auto" markerUnits="userSpaceOnUse">
+<path d="M0,0.6 L10.2,4.5 L0,8.4 Z" fill="var(--muted)"/></marker>
+<marker id="ah4g" markerWidth="11" markerHeight="9" refX="9.8" refY="4.5" orient="auto" markerUnits="userSpaceOnUse">
+<path d="M0,0.6 L10.2,4.5 L0,8.4 Z" fill="var(--gold)"/></marker></defs>
+<g font-size="11" fill="var(--muted)" font-family="inherit">
+<text x="12" y="20" font-size="10">actions</text>
+<circle cx="32" cy="42" r="12" fill="none" stroke="var(--muted)" stroke-width="1.2"/>
+<circle cx="32" cy="78" r="12" fill="none" stroke="var(--muted)" stroke-width="1.2"/>
+<circle cx="32" cy="114" r="12" fill="none" stroke="var(--muted)" stroke-width="1.2"/>
+<text x="32" y="46" text-anchor="middle" font-size="10">a₁</text>
+<text x="32" y="82" text-anchor="middle" font-size="10">a₂</text>
+<text x="32" y="118" text-anchor="middle" font-size="10">a₃</text>
+<text x="134" y="20" font-size="10">states</text>
+<circle cx="152" cy="52" r="13" fill="none" stroke="var(--accent)" stroke-width="1.3"/>
+<circle cx="152" cy="112" r="13" fill="none" stroke="var(--accent)" stroke-width="1.3"/>
+<text x="152" y="56" text-anchor="middle" fill="var(--accent)" font-size="10">s₁</text>
+<text x="152" y="116" text-anchor="middle" fill="var(--accent)" font-size="10">s₂</text>
+<g stroke="var(--muted)" stroke-width="1.1" fill="none" marker-end="url(#ah4)">
+<line x1="45" y1="43" x2="134" y2="50"/><line x1="45" y1="74" x2="134" y2="56"/>
+<line x1="45" y1="84" x2="134" y2="106"/><line x1="45" y1="114" x2="134" y2="111"/></g>
+<line x1="170" y1="52" x2="252" y2="52" stroke="var(--muted)" stroke-width="1.2"
+      stroke-dasharray="3 3" marker-end="url(#ah4)"/>
+<text x="180" y="44" font-size="9.5">delay d</text>
+<rect x="256" y="37" width="92" height="30" rx="4" fill="none" stroke="var(--fg)" stroke-width="1.3"/>
+<text x="302" y="56" text-anchor="middle" fill="var(--fg)" font-size="11">loss at s₁</text>
+<path d="M256 68 C 212 96, 118 78, 46 46" fill="none" stroke="var(--gold)" stroke-width="1.6"
+      marker-end="url(#ah4g)"/>
+<path d="M258 74 C 216 104, 116 96, 46 84" fill="none" stroke="var(--gold)" stroke-width="1.6"
+      marker-end="url(#ah4g)"/>
+<text x="86" y="137" fill="var(--gold)" font-size="9.5">credited to a₁ and a₂, the actions that reach s₁</text>
+<line x1="386" y1="20" x2="386" y2="130" stroke="var(--rule)" stroke-width="1"/>
+<text x="404" y="56" font-size="10">price of pooling</text>
+<text x="404" y="76" fill="var(--fg)" font-size="12" font-weight="600">effective dimension vₜ</text>
+<text x="404" y="94" font-size="10">set by how much actions overlap</text>
+</g></svg>
+      </div>
+      <figcaption>Actions lead to states; a loss seen after a delay is credited back only to the actions that could have produced that state.</figcaption>
+    </figure>
+    <dl class="pa">
+      <dt>Problem</dt>
+      <dd>When an action's outcome only arrives after a delay, most algorithms wait or discard the signal.</dd>
+      <dt>Approach</dt>
+      <dd>State-EXP3 charges one delayed outcome to every action that could have produced it, and pays for that pooling with an <em>effective dimension</em> that reads the overlap between actions rather than counting them, so the cost tracks how much the actions actually share.</dd>
+      <dt>Result</dt>
+      <dd>Regret reduced by up to <strong>79%</strong> versus action-level weighting and by <strong>32–68%</strong> versus a rate-optimal action-only delayed-bandit baseline, with a lower bound showing the cost of delayed feedback cannot be eliminated by pooling.</dd>
+      <dt>Links</dt>
+      <dd><span class="plinks"><a href="https://arxiv.org/abs/2609.01761">Paper</a><a href="https://github.com/MelikaBaghi/State-exp3">Code</a></span></dd>
+    </dl>
+    <p class="tags"><span>Sequential decision making</span><span>Bandits</span><span>Online learning</span><span>Delayed feedback</span></p>
+  </article>
+
+  <article class="thread">
+    <h3>Deciding when partial clinical evidence is enough</h3>
+    <p class="tmeta">Georgia Institute of Technology</p>
+    <figure>
+      <div class="fig">
+<svg viewBox="0 0 640 150" role="img" aria-label="From the observed modalities, either certify the prediction and act, or abstain and acquire the next modality">
+<defs><marker id="ah2" markerWidth="11" markerHeight="9" refX="9.8" refY="4.5" orient="auto" markerUnits="userSpaceOnUse">
+<path d="M0,0.6 L10.2,4.5 L0,8.4 Z" fill="var(--muted)"/></marker>
+<marker id="ah2g" markerWidth="11" markerHeight="9" refX="9.8" refY="4.5" orient="auto" markerUnits="userSpaceOnUse">
+<path d="M0,0.6 L10.2,4.5 L0,8.4 Z" fill="var(--gold)"/></marker></defs>
+<g font-size="11" fill="var(--muted)" font-family="inherit">
+<text x="8" y="24" font-size="10">observed</text>
+<g stroke="var(--muted)" stroke-width="1">
+<rect x="8" y="32" width="86" height="20" rx="3" fill="var(--muted)" fill-opacity="0.85"/>
+<rect x="8" y="56" width="86" height="20" rx="3" fill="var(--muted)" fill-opacity="0.85"/>
+<rect x="8" y="80" width="86" height="20" rx="3" fill="none" stroke-dasharray="3 3"/>
+<rect x="8" y="104" width="86" height="20" rx="3" fill="none" stroke-dasharray="3 3"/></g>
+<text x="16" y="46" fill="var(--bg)" font-size="10">imaging</text>
+<text x="16" y="70" fill="var(--bg)" font-size="10">labs</text>
+<text x="16" y="94" font-size="10">notes</text>
+<text x="16" y="118" font-size="10">genomics</text>
+<line x1="102" y1="72" x2="140" y2="72" stroke="var(--muted)" stroke-width="1.4" marker-end="url(#ah2)"/>
+<path d="M196 44 L246 72 L196 100 L146 72 Z" fill="none" stroke="var(--accent)" stroke-width="1.4"/>
+<text x="196" y="68" text-anchor="middle" fill="var(--accent)" font-size="9.5">enough</text>
+<text x="196" y="80" text-anchor="middle" fill="var(--accent)" font-size="9.5">evidence?</text>
+<line x1="248" y1="60" x2="300" y2="40" stroke="var(--muted)" stroke-width="1.4" marker-end="url(#ah2)"/>
+<text x="256" y="36" font-size="9.5">yes</text>
+<rect x="306" y="24" width="120" height="32" rx="4" fill="none" stroke="var(--fg)" stroke-width="1.3"/>
+<text x="366" y="44" text-anchor="middle" fill="var(--fg)" font-size="11" font-weight="600">certify &amp; act</text>
+<line x1="248" y1="86" x2="300" y2="108" stroke="var(--gold)" stroke-width="1.4" marker-end="url(#ah2g)"/>
+<text x="256" y="112" fill="var(--gold)" font-size="9.5">no</text>
+<rect x="306" y="92" width="150" height="32" rx="4" fill="none" stroke="var(--gold)" stroke-width="1.3"/>
+<text x="381" y="112" text-anchor="middle" fill="var(--gold)" font-size="11">abstain, acquire next</text>
+<path d="M306 112 C 230 150, 80 150, 51 130" fill="none" stroke="var(--gold)" stroke-width="1.4"
+      marker-end="url(#ah2g)"/>
+<line x1="476" y1="20" x2="476" y2="130" stroke="var(--rule)" stroke-width="1"/>
+<text x="494" y="62" font-size="10">coverage holds for</text>
+<text x="494" y="78" fill="var(--fg)" font-size="11" font-weight="600">every stopping pattern</text>
+</g></svg>
+      </div>
+      <figcaption>From the observed modalities, either certify the prediction and act, or abstain and acquire the next modality.</figcaption>
+    </figure>
+    <dl class="pa">
+      <dt>Problem</dt>
+      <dd>Clinical models often have to act on incomplete inputs: imaging but no labs, notes but no genomics.</dd>
+      <dt>Approach</dt>
+      <dd>RouteCert certifies a prediction when the evidence already in hand determines the decision, and otherwise abstains and says which modality to acquire next. Acquisition is separated from calibration, so conformal coverage holds conditional on the terminal modality pattern rather than on average.</dd>
+      <dt>Result</dt>
+      <dd>Distribution-free coverage guarantees, evaluated on four datasets spanning ECG, speech and wearable sensing (PTB-XL, CMU-MOSEI, MHEALTH, IEMOCAP).</dd>
+      <dt>Links</dt>
+      <dd><span class="plinks"><a href="https://arxiv.org/abs/2608.15520">Paper</a><a href="https://github.com/MelikaBaghi/RouteCert">Code</a></span></dd>
+    </dl>
+    <p class="tags"><span>Conformal prediction</span><span>Multimodal learning</span><span>Missing data</span><span>Clinical decision support</span></p>
+  </article>
+
+  <article class="thread">
+    <h3>Surrogates that keep the data's shape</h3>
+    <p class="tmeta">Georgia Institute of Technology · manuscript under review</p>
+    <figure>
+      <div class="fig">
+<svg viewBox="0 0 640 150" role="img" aria-label="Simulation output is multiway; instead of flattening it, each mode keeps its own subspace, interpolated separately, with cores aligned before fitting">
+<defs><marker id="ah5" markerWidth="11" markerHeight="9" refX="9.8" refY="4.5" orient="auto" markerUnits="userSpaceOnUse">
+<path d="M0,0.6 L10.2,4.5 L0,8.4 Z" fill="var(--muted)"/></marker>
+<marker id="ah5g" markerWidth="11" markerHeight="9" refX="9.8" refY="4.5" orient="auto" markerUnits="userSpaceOnUse">
+<path d="M0,0.6 L10.2,4.5 L0,8.4 Z" fill="var(--gold)"/></marker></defs>
+<g font-size="11" fill="var(--muted)" font-family="inherit">
+<text x="10" y="22" font-size="10">simulation field</text>
+<path d="M14 44 L54 32 L84 44 L44 58 Z" fill="var(--muted)" fill-opacity="0.30" stroke="var(--muted)" stroke-width="1.1"/>
+<path d="M14 44 L14 88 L44 102 L44 58 Z" fill="var(--muted)" fill-opacity="0.16" stroke="var(--muted)" stroke-width="1.1"/>
+<path d="M44 58 L84 44 L84 88 L44 102 Z" fill="var(--muted)" fill-opacity="0.22" stroke="var(--muted)" stroke-width="1.1"/>
+<text x="16" y="120" font-size="9.5">space × space × time</text>
+<line x1="96" y1="68" x2="132" y2="68" stroke="var(--muted)" stroke-width="1.3" marker-end="url(#ah5)"/>
+<text x="150" y="26" font-size="9.5">one subspace per mode</text>
+<g stroke="var(--accent)" stroke-width="1.2" fill="var(--accent)" fill-opacity="0.14">
+<rect x="150" y="36" width="62" height="15" rx="2"/>
+<rect x="150" y="57" width="62" height="15" rx="2"/>
+<rect x="150" y="78" width="62" height="15" rx="2"/></g>
+<text x="219" y="47" font-size="9.5" fill="var(--accent)">U₁</text>
+<text x="219" y="68" font-size="9.5" fill="var(--accent)">U₂</text>
+<text x="219" y="89" font-size="9.5" fill="var(--accent)">U₃</text>
+<path d="M244 52 L266 45 L282 52 L260 60 Z" fill="var(--gold)" fill-opacity="0.30" stroke="var(--gold)" stroke-width="1.1"/>
+<path d="M244 52 L244 74 L260 82 L260 60 Z" fill="var(--gold)" fill-opacity="0.16" stroke="var(--gold)" stroke-width="1.1"/>
+<path d="M260 60 L282 52 L282 74 L260 82 Z" fill="var(--gold)" fill-opacity="0.22" stroke="var(--gold)" stroke-width="1.1"/>
+<text x="240" y="98" font-size="9.5" fill="var(--gold)">core</text>
+<line x1="296" y1="68" x2="332" y2="68" stroke="var(--muted)" stroke-width="1.3" marker-end="url(#ah5)"/>
+<text x="342" y="46" font-size="10">each mode interpolated</text>
+<text x="342" y="60" font-size="10">on its own manifold</text>
+<text x="342" y="82" fill="var(--gold)" font-size="10">cores aligned, then</text>
+<text x="342" y="96" fill="var(--gold)" font-size="10">one low-rank surrogate</text>
+<line x1="470" y1="20" x2="470" y2="130" stroke="var(--rule)" stroke-width="1"/>
+<text x="488" y="48" font-size="10">vs flattening the field</text>
+<text x="488" y="70" fill="var(--fg)" font-size="13" font-weight="650">up to 564× less work</text>
+<text x="488" y="90" font-size="10">4×–108× faster, same accuracy</text>
+</g></svg>
+      </div>
+      <figcaption>Simulation output is multiway; instead of flattening it, each mode keeps its own subspace, interpolated separately, with cores aligned before fitting.</figcaption>
+    </figure>
+    <dl class="pa">
+      <dt>Problem</dt>
+      <dd>Simulation output is naturally multiway: space by space by time. The usual move is to flatten it into one long vector, which throws that structure away.</dd>
+      <dt>Approach</dt>
+      <dd>Every mode gets its own low-dimensional subspace, each interpolated on its own manifold, with the cores aligned before a single low-rank surrogate is fitted.</dd>
+      <dt>Result</dt>
+      <dd>Across four PDE benchmarks, <strong>35.6× to 564× less interpolation work</strong> and 4× to 108× faster than flattened baselines, matching their accuracy to within 0.35 percentage points.</dd>
+      <dt>Status</dt>
+      <dd><span class="plinks"><span class="status">Manuscript under review</span></span></dd>
+    </dl>
+    <p class="tags"><span>Tensor decompositions</span><span>Surrogate modeling</span><span>Riemannian geometry</span><span>Scientific ML</span></p>
+  </article>
+
+  <p class="kicker">Other projects</p>
+  <ul class="projects">
+    <li><b>Predictive maintenance and anomaly detection</b>: end-to-end pipeline for sensor-based
+      fault detection: ARIMA and LSTM forecasting, ensemble classifiers over multivariate telemetry, and
+      hybrid Weibull and state-space degradation modelling with online retraining, giving over 15 hours of
+      advance fault warning. Deployed on Spark for low-latency inference across sensor networks.
+      <span class="meta">Python, PySpark · 2025</span></li>
+    <li><b>Multimodal phenotype modeling</b>: built representation-learning pipelines over single-cell
+      transcriptomics, longitudinal EHR and imaging-derived phenotypes, using contrastive learning for
+      patient and cellular embeddings and transformer language models to extract structured phenotypes
+      from unstructured clinical notes. <span class="meta">Python, PyTorch · 2024–25</span></li>
+    <li><b>Drug safety and clinical risk</b>: detected adverse drug events from longitudinal EHR with
+      temporally-aware patient embeddings over medication trajectories, labs and comorbidities; compared
+      regularized regression, tree ensembles and neural models, and audited calibration and fairness
+      across demographic strata. <span class="meta">Python · 2024–25</span></li>
+    <li><b>Sensitivity-guided diffusion models</b>: constrained diffusion generative models to physically
+      meaningful latent subspaces, deriving sensitivity-informed perturbation schedules that steer the
+      forward SDE along high-variance directions to improve sample efficiency in data-scarce scientific
+      regimes. <span class="meta">Python, PyTorch · 2024–25</span></li>
+    <li><b>Anomaly detection in sensor streams</b>: built ARMA-based statistical monitoring with
+      sliding-window control charts to flag faults in industrial sensor streams early, trading off
+      detection delay against false-alarm rate. <span class="meta">Python · 2023</span></li>
+    <li><b>Loan default prediction</b>: trained and compared ensemble classifiers for consumer credit
+      risk, evaluating ranking performance alongside probability calibration rather than accuracy alone.
+      <span class="meta">Python · 2023</span></li>
+    <li><b>Safe operating range under hybrid inputs</b>: built a six-degree-of-freedom physics-based
+      simulator in MATLAB/Simulink from system velocity equations and operational constraints, generated
+      data across operating scenarios, and trained neural network models in Python to predict system
+      behaviour and expand the feasible operating range.
+      <span class="meta">MATLAB, Simulink, Python · 2018–20</span></li>
+  </ul>
+
+  <details class="more">
+    <summary>Additional projects</summary>
+    <ul class="projects">
+      <li><b>Internet access and female economic empowerment</b>: cross-national nonparametric analysis of
+        internet usage against female employment and representation in senior management across 92 countries
+        (World Bank Gender Data Portal, 2022); Mann–Whitney U tests with Bonferroni correction and
+        Anderson–Darling / Shapiro–Wilk normality diagnostics. <span class="meta">Group project</span></li>
+      <li><b>Breast cancer prediction</b>: built and statistically evaluated diagnostic classification
+        pipelines, comparing generalization across models rather than training accuracy.
+        <span class="meta">Python, scikit-learn · 2021–22</span></li>
+      <li><b>Nurse scheduling</b>: formulated and solved mixed-integer programs for healthcare workforce
+        scheduling under demand uncertainty. <span class="meta">GAMS · 2020–21</span></li>
+      <li><b>Healthcare operations quality</b>: applied Six Sigma to locate and reduce service quality
+        deficiencies in a healthcare organization. <span class="meta">2021–22</span></li>
+      <li><b>Food recommender expert system</b>: knowledge-based recommendation tailored to individual
+        health characteristics and dietary needs. <span class="meta">Python · 2021–22</span></li>
+      <li><b>Tensor-structured learning pipelines</b>: deep and tensor-structured architectures for
+        parameterized scientific fields under geometric constraints.
+        <span class="meta">Python, PyTorch · 2024</span></li>
+      <li><b>Transonic airfoil CFD</b>: numerical analysis of transonic flow over RAE airfoils and
+        nonlinear PDE solution behaviour under varying physical parameters.
+        <span class="meta">Ansys Fluent · 2021–22</span></li>
+    </ul>
+  </details>
+
+  <footer>
+    <p class="fnote">© 2026 Melika Baghi · Atlanta, GA</p>
+    <p class="flinks">
+      <a href="https://scholar.google.com/citations?user=UNGLFyUAAAAJ&amp;hl=en">Google Scholar</a> ·
+      <a href="https://www.linkedin.com/in/melika-baghi">LinkedIn</a> ·
+      <a href="https://github.com/MelikaBaghi">github.com/MelikaBaghi</a> ·
+      <a href="mailto:mbaghi3@gatech.edu">mbaghi3@gatech.edu</a>
+    </p>
+  </footer>
+</div>
+
+</body>
+</html>
