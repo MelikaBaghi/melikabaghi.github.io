@@ -42,50 +42,30 @@
     <p class="tmeta">Amirkabir University of Technology · paper under review at <em>Health Care Management Science</em></p>
     <figure>
       <div class="fig">
-<svg viewBox="0 0 640 150" role="img" aria-label="Patients queue for admission; wards lend each other idle beds, cutting the mean queue from 25.9 to 14.8 days">
-<defs><marker id="ah1" markerWidth="11" markerHeight="9" refX="9.8" refY="4.5" orient="auto" markerUnits="userSpaceOnUse">
-<path d="M0,0.6 L10.2,4.5 L0,8.4 Z" fill="var(--muted)"/></marker>
-<marker id="ah1g" markerWidth="11" markerHeight="9" refX="9.8" refY="4.5" orient="auto" markerUnits="userSpaceOnUse">
-<path d="M0,0.6 L10.2,4.5 L0,8.4 Z" fill="var(--gold)"/></marker></defs>
+<svg viewBox="0 0 640 150" role="img" aria-label="Mean inpatient admission wait: 14.8 days when patient behaviour is modelled, 25.8 days in the discrete-event-only model, 42% lower">
 <g font-size="11" fill="var(--muted)" font-family="inherit">
-<line x1="8" y1="75" x2="52" y2="75" stroke="var(--muted)" stroke-width="1.4" marker-end="url(#ah1)"/>
-<text x="8" y="66">arrivals</text>
-<g fill="var(--rule)" stroke="var(--muted)" stroke-width="1">
-<rect x="62" y="66" width="9" height="18" rx="1.5"/><rect x="74" y="66" width="9" height="18" rx="1.5"/>
-<rect x="86" y="66" width="9" height="18" rx="1.5"/><rect x="98" y="66" width="9" height="18" rx="1.5"/></g>
-<text x="62" y="99">queue</text>
-<rect x="140" y="12" width="180" height="52" rx="4" fill="none" stroke="var(--rule)" stroke-width="1.2"/>
-<text x="150" y="27" fill="var(--fg)" font-weight="600">Ward A</text>
-<g stroke="var(--muted)" stroke-width="0.9">
-<rect x="150" y="36" width="24" height="16" rx="2" fill="var(--muted)"/><rect x="178" y="36" width="24" height="16" rx="2" fill="var(--muted)"/>
-<rect x="206" y="36" width="24" height="16" rx="2" fill="var(--muted)"/><rect x="234" y="36" width="24" height="16" rx="2" fill="var(--muted)"/>
-<rect x="262" y="36" width="24" height="16" rx="2" fill="var(--muted)"/><rect x="290" y="36" width="24" height="16" rx="2" fill="var(--muted)"/></g>
-<rect x="140" y="86" width="180" height="52" rx="4" fill="none" stroke="var(--rule)" stroke-width="1.2"/>
-<text x="150" y="101" fill="var(--fg)" font-weight="600">Ward B</text>
-<g stroke="var(--muted)" stroke-width="0.9">
-<rect x="150" y="110" width="24" height="16" rx="2" fill="var(--muted)"/><rect x="178" y="110" width="24" height="16" rx="2" fill="var(--muted)"/>
-<rect x="206" y="110" width="24" height="16" rx="2" fill="var(--muted)"/>
-<rect x="234" y="110" width="24" height="16" rx="2" fill="none"/><rect x="262" y="110" width="24" height="16" rx="2" fill="none"/>
-<rect x="290" y="110" width="24" height="16" rx="2" fill="none"/></g>
-<path d="M321 114 C 356 110, 356 44, 325 40" fill="none" stroke="var(--gold)" stroke-width="1.7"
-      marker-end="url(#ah1g)"/>
-<text x="354" y="80" fill="var(--gold)" font-size="10">idle beds</text>
-<text x="354" y="92" fill="var(--gold)" font-size="10">shared</text>
-<line x1="424" y1="20" x2="424" y2="130" stroke="var(--rule)" stroke-width="1"/>
-<text x="444" y="52" font-size="10">mean admission queue</text>
-<text x="444" y="80" fill="var(--fg)" font-size="19" font-weight="650">25.9 → 14.8</text>
-<text x="444" y="98" font-size="10">days · 43% shorter</text>
+<text x="8" y="20" fill="var(--fg)" font-weight="600">Mean inpatient admission wait, same department and demand</text>
+<text x="8" y="56" fill="var(--fg)" font-weight="600">Hybrid model</text>
+<text x="8" y="70" font-size="10">channel choice, doctor switching,</text>
+<text x="8" y="82" font-size="10">abandonment, deterioration</text>
+<rect x="196" y="47" width="186" height="22" rx="2" fill="var(--gold)" fill-opacity="0.85"/>
+<text x="390" y="63" fill="var(--fg)" font-size="15" font-weight="650">14.8 days</text>
+<text x="632" y="63" text-anchor="end" fill="var(--gold)" font-size="10">42% lower, p &lt; 0.001</text>
+<text x="8" y="110" fill="var(--fg)" font-weight="600">Discrete-event only</text>
+<text x="8" y="124" font-size="10">same flow, behaviours removed</text>
+<rect x="196" y="101" width="324" height="22" rx="2" fill="var(--muted)" fill-opacity="0.45"/>
+<text x="528" y="117" fill="var(--fg)" font-size="15" font-weight="650">25.8 days</text>
 </g></svg>
       </div>
-      <figcaption>Patients queue for admission; wards lend each other idle beds, cutting the mean queue from 25.9 to 14.8 days.</figcaption>
+      <figcaption>With patient behaviour modelled, the mean inpatient admission wait is 14.8 days; the otherwise identical discrete-event-only model shows 25.8 days (30 and 36 replications, Welch t-test).</figcaption>
     </figure>
     <dl class="pa">
       <dt>Problem</dt>
       <dd>A multi-specialty international-patient department serves medical tourists alongside local patients, and how those patients behave (abandoning, switching doctors, choosing a channel) affects the queues.</dd>
       <dt>Approach</dt>
-      <dd>A hybrid agent-based and discrete-event simulation in AnyLogic with patient behaviour modelled explicitly, compared against an otherwise identical discrete-event-only model. A compatible-section bed-sharing policy was tested across 30 randomized-seed replications, with a 256-run fractional factorial design screening 16 operational factors.</dd>
+      <dd>A hybrid agent-based and discrete-event simulation in AnyLogic that models channel choice, physician switching, treatment abandonment and deterioration. A 256-run fractional factorial design screened 16 controllable factors across six performance measures, followed by a replicated comparison against an otherwise identical discrete-event-only model.</dd>
       <dt>Result</dt>
-      <dd>Medical tourists' <strong>hospital-queue wait falls by 82%</strong> (13.7 to 2.4 days), and bed sharing cuts the <strong>inpatient admission queue by 43%</strong> (25.9 to 14.8 days, <em>p</em> &lt; 0.001).</dd>
+      <dd><strong>Bed capacity</strong> is the most consistent driver of waiting; priority rules, channel design and appointment timing also matter. Leaving patient behaviour out changes the answer: the discrete-event-only model shows a 25.8-day admission wait against 14.8 days in the hybrid model (<strong>42% lower</strong>, <em>p</em> &lt; 0.001).</dd>
       <dt>Links</dt>
       <dd><span class="plinks"><a href="https://arxiv.org/abs/2605.19139">Paper</a><a href="https://github.com/MelikaBaghi/IPD-medical-tourism-simulation">Code</a><a href="https://doi.org/10.5281/zenodo.22646799">DOI</a></span></dd>
     </dl>
