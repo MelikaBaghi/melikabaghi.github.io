@@ -108,7 +108,7 @@
       <dt>Approach</dt>
       <dd>cXGBoost enforces that bound inside every leaf of the boosting ensemble rather than correcting afterwards, so predictions are valid by construction and no general-purpose optimiser is called at any split.</dd>
       <dt>Result</dt>
-      <dd>Cuts high-Reynolds reconstruction error <strong>5×</strong> against Grassmann interpolation baselines across four PDE problems (cylinder wake, wave propagation, Burgers equation, beam dynamics). Released as an open-source Python package.</dd>
+      <dd>Cuts high-Reynolds reconstruction error <strong>5×</strong> against Grassmann interpolation baselines across four PDE problems (cylinder wake, wave propagation, Burgers equation, beam dynamics). Released as an installable open-source package.</dd>
       <dt>Links</dt>
       <dd><span class="plinks"><a href="https://arxiv.org/abs/2605.04130">Paper</a><a href="https://github.com/MelikaBaghi/cXGBoost">Code</a></span></dd>
     </dl>
@@ -229,7 +229,7 @@
 
   <article class="thread">
     <h3>Surrogates that keep the data's shape</h3>
-    <p class="tmeta">Georgia Institute of Technology · completed manuscript</p>
+    <p class="tmeta">Georgia Institute of Technology · manuscript under review</p>
     <figure>
       <div class="fig">
 <svg viewBox="0 0 640 150" role="img" aria-label="Simulation output is multiway; instead of flattening it, each mode keeps its own subspace, interpolated separately, with cores aligned before fitting">
@@ -277,29 +277,13 @@
       <dt>Result</dt>
       <dd>Across four PDE benchmarks, <strong>35.6× to 564× less interpolation work</strong> and 4× to 108× faster than flattened baselines, matching their accuracy to within 0.35 percentage points.</dd>
       <dt>Status</dt>
-      <dd><span class="plinks"><span class="status">Completed manuscript, ready for submission</span></span></dd>
+      <dd><span class="plinks"><span class="status">Manuscript under review</span></span></dd>
     </dl>
     <p class="tags"><span>Tensor decompositions</span><span>Surrogate modeling</span><span>Riemannian geometry</span><span>Scientific ML</span></p>
   </article>
 
   <p class="kicker">Other projects</p>
   <ul class="projects">
-    <li><b>LLM agents as simulated patients</b>: prompted three dated OpenAI model snapshots, with a fixed
-      prompt, a strict JSON schema and cached replies, to act as 36 synthetic patient profiles inside a
-      queueing simulation of eight capacity policies (120 paired seeds). Calibrated to the same baseline
-      rates, the models agreed at baseline but not on the best policy under a demand surge; a follow-up with
-      2,160 sampled actions found that simple behavioral rules picked the same policy, so the study stopped
-      at its go/no-go gate. <span class="meta">Python, OpenAI API · 2026</span></li>
-    <li><b>Retrieval-augmented claim verification</b>: a local RAG pipeline over 5,183 SciFact abstracts
-      comparing BM25, two dense retrievers, rank fusion and reranking, with an open 1.5B LLM returning JSON
-      verdicts with citations. Hybrid retrieval raised nDCG@10 from 0.678 to 0.724 over BM25 (p = 0.0008);
-      retrieval lifted accuracy on claims with evidence but almost removed correct abstentions, and one
-      distractor abstract cut faithful rationales from 0.251 to 0.142.
-      <span class="meta">Python, PyTorch, Hugging Face · 2026</span></li>
-    <li><b>Probing what language models encode</b>: trained probes at three depths on residual-stream
-      activations of Pythia models from 70M to 1.4B parameters, testing every finding against shuffled-label
-      nulls and matched controls; day-of-week order appeared from 160M parameters up (rank correlation about
-      0.91) and never in the controls. <span class="meta">Python, PyTorch, Transformers · 2026</span></li>
     <li><b>Predictive maintenance and anomaly detection</b>: end-to-end pipeline for sensor-based
       fault detection: ARIMA and LSTM forecasting, ensemble classifiers over multivariate telemetry, and
       hybrid Weibull and state-space degradation modelling with online retraining, giving over 15 hours of
