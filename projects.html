@@ -229,7 +229,7 @@
 
   <article class="thread">
     <h3>Surrogates that keep the data's shape</h3>
-    <p class="tmeta">Georgia Institute of Technology · completed manuscript</p>
+    <p class="tmeta">Georgia Institute of Technology · submitted to the <em>Journal of Computational Physics</em></p>
     <figure>
       <div class="fig">
 <svg viewBox="0 0 640 150" role="img" aria-label="Simulation output is multiway; instead of flattening it, each mode keeps its own subspace, interpolated separately, with cores aligned before fitting">
@@ -263,8 +263,8 @@
 <text x="342" y="96" fill="var(--gold)" font-size="10">one low-rank surrogate</text>
 <line x1="470" y1="20" x2="470" y2="130" stroke="var(--rule)" stroke-width="1"/>
 <text x="488" y="48" font-size="10">vs flattening the field</text>
-<text x="488" y="70" fill="var(--fg)" font-size="13" font-weight="650">up to 564× less work</text>
-<text x="488" y="90" font-size="10">4×–108× faster, same accuracy</text>
+<text x="488" y="70" fill="var(--fg)" font-size="13" font-weight="650">up to 482× smaller</text>
+<text x="488" y="90" font-size="10">3.3×–8.5× faster, same accuracy</text>
 </g></svg>
       </div>
       <figcaption>Simulation output is multiway; instead of flattening it, each mode keeps its own subspace, interpolated separately, with cores aligned before fitting.</figcaption>
@@ -275,9 +275,9 @@
       <dt>Approach</dt>
       <dd>Every mode gets its own low-dimensional subspace, each interpolated on its own manifold, with the cores aligned before a single low-rank surrogate is fitted.</dd>
       <dt>Result</dt>
-      <dd>Across four PDE benchmarks, <strong>35.6× to 564× less interpolation work</strong> and 4× to 108× faster than flattened baselines, matching their accuracy to within 0.35 percentage points.</dd>
-      <dt>Status</dt>
-      <dd><span class="plinks"><span class="status">Completed manuscript, ready for submission</span></span></dd>
+      <dd>Across five PDE benchmarks in two and three dimensions, including public CFD data, the interpolation size is <strong>13× to 482× smaller</strong> and cached queries run 3.3× to 8.5× faster than a single-subspace surrogate built on the flattened field, with mean errors within 0.22 percentage points. In a 3D grid study at 64³ the size ratio reaches 2,260× and the speedup 11.9×.</dd>
+      <dt>Links</dt>
+      <dd><span class="plinks"><a href="https://arxiv.org/abs/2610.34559">Paper</a></span></dd>
     </dl>
     <p class="tags"><span>Tensor decompositions</span><span>Surrogate modeling</span><span>Riemannian geometry</span><span>Scientific ML</span></p>
   </article>
